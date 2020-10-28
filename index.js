@@ -61,7 +61,7 @@ async function run() {
     currentOffset += desiredXPixel
   })
 
-  console.log(`xrandr ${args.join(' ')}`)
+  console.log(`xrandr ${args.join(' ')} && xrandr --output ${primary.name} --scale 0.9999x0.9999`)
 }
 
 run().catch(err => {
