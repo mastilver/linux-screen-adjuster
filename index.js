@@ -56,6 +56,11 @@ async function run() {
         '--scale-from',
         `${desiredXPixel}x${desiredYPixel}`
       )
+
+      args.push(
+        '--panning',
+        `${desiredXPixel}x${desiredYPixel}+${currentOffset}+0`
+      )
     }
 
     currentOffset += desiredXPixel
